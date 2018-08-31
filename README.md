@@ -21,7 +21,7 @@ XYZ is a courier company. As we appreciate that human capital plays an important
 complete executed code with charts.
 
 
-**********R***********************
+**********R***********
 
 2. Under Forecasting and Analysis using R there are two folders:
 

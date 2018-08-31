@@ -1,0 +1,80 @@
+**********************TSLM**************************
+Call:
+tslm(formula = train ~ trend + season)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-27.126 -14.510  -1.412  10.184  41.609 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 57.92120   14.09920   4.108  0.00043 ***
+trend        0.01489    0.36247   0.041  0.96759    
+season2     33.22842   17.40246   1.909  0.06876 .  
+season3     94.49282   17.41378   5.426 1.63e-05 ***
+season4     20.77178   17.43263   1.192  0.24559    
+season5     31.21925   17.45899   1.788  0.08694 .  
+season6     22.20517   17.49282   1.269  0.21700    
+season7     42.26951   17.53408   2.411  0.02431 *  
+season8     25.06428   17.49282   1.433  0.16536    
+season9      3.60246   17.45899   0.206  0.83834    
+season10    40.59234   17.43263   2.329  0.02903 *  
+season11    30.35393   17.41378   1.743  0.09467 .  
+season12     6.49474   17.40246   0.373  0.71241    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 21.31 on 23 degrees of freedom
+Multiple R-squared:  0.6597,	Adjusted R-squared:  0.4822 
+F-statistic: 3.716 on 12 and 23 DF,  p-value: 0.003342
+
+
+Accuracy:
+
+                        ME     RMSE      MAE        MPE     MAPE      MASE      ACF1
+Training set  1.776357e-15 17.03235 13.41135  -3.732383 15.93957 0.5630446 0.1290576
+Test set     -2.553652e+01 25.53652 25.53652 -33.955807 33.95581 1.0720914        NA
+
+
+
+
+**************************ARIMA***************************
+
+Series: train 
+ARIMA(0,0,0)(0,1,0)[12] 
+
+sigma^2 estimated as 840.5:  log likelihood=-114.86
+AIC=231.73   AICc=231.91   BIC=232.9
+
+
+Accuracy:
+
+                      ME     RMSE      MAE        MPE     MAPE      MASE     ACF1
+Training set   0.1488125 23.67146 15.90925  -3.464052 19.81744 0.6679129 0.278452
+Test set     -21.3453931 21.34539 21.34539 -28.382884 28.38288 0.8961368       NA
+
+
+*****************ETS******************************
+
+ETS(A,N,N) 
+
+Call:
+ ets(y = train) 
+
+  Smoothing parameters:
+    alpha = 1e-04 
+
+  Initial states:
+    l = 87.3952 
+
+  sigma:  30.0467
+
+     AIC     AICc      BIC 
+377.9471 378.6971 382.6976 
+
+
+Accuracy:
+
+                        ME     RMSE      MAE       MPE     MAPE      MASE       ACF1
+Training set  -0.006175525 29.20010 21.58450 -10.41642 26.83280 0.9061751 0.03465421
+Test set     -12.190019401 12.19002 12.19002 -16.20902 16.20902 0.5117697         NA

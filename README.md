@@ -15,8 +15,8 @@ XYZ is a courier company. As we appreciate that human capital plays an important
 	*Jypter_notebook_html: Here the pre-excuted version of the notebook is placed in .html format.
 	If someone doesn't want to run the code, step by step execution of the code can be seen in this document.
 	*Python Code and Files: Here the code file(.ipynb) is placed with the dataset and the csv's generated
-	  during Analysis.
-Recommended: You can go through Employee+Absenteeism+Model.html file placed in Jypter_notebook_html to get the 
+	 during Analysis.
+	 Recommended: You can go through Employee+Absenteeism+Model.html file placed in Jypter_notebook_html to get the 
 complete executed code with charts.
 
 
